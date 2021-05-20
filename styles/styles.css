@@ -74,7 +74,7 @@ h2 {
 ---------- */
 
 body {
-  background: #fff;
+  background-color: rgba(254, 251, 165, 0.1);
 }
 header {
   margin-bottom: 80px;
@@ -112,7 +112,6 @@ a:hover {
 
 /* LOGO */
 #logo {
-  margin: 0 0 0 40px;
   text-decoration: none;
 }
 #logo a:hover {
@@ -121,8 +120,8 @@ a:hover {
 #logo .border {
   height: 5px;
   background-color: var(--yellow);
-  width: 330px;
-  margin-left: -20px;
+  width: 265px;
+  margin-left: -10px;
 }
 nav {
   color: #fff;
@@ -347,12 +346,29 @@ nav .openMenu {
 
 .blog-wrapper {
   margin-top: 80px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .blog-wrapper H2 {
   font-size: 1.6em;
+  margin-bottom: 30px;
+}
+.blogPost {
+  padding-top: 25px;
+  display: grid;
+  grid-template-rows: 1fr;
+  background-color: #fff;
+  margin: 25px 10px;
+  border: 1px solid rgb(186, 186, 186);
+  border-radius: 5px;
+}
+.blogPost img {
+  display: block;
+  object-fit: cover;
+  object-position: top;
+  width: 100%;
+  height: 300px;
+  margin: 0 auto 30px auto;
 }
 
 /* LOAD MORE BUTTON*/
@@ -368,23 +384,6 @@ main button {
   font-style: normal;
   font-size: 1em;
   letter-spacing: 1.5px;
-}
-.blogPost {
-  padding-top: 25px;
-  display: grid;
-  grid-template-rows: 1fr;
-  width: 28%;
-  margin: 25px 10px;
-  border: 1px solid rgb(186, 186, 186);
-  border-radius: 5px;
-}
-.blogPost img {
-  display: block;
-  object-fit: cover;
-  object-position: top;
-  width: 100%;
-  height: 300px;
-  margin: 0 auto 50px auto;
 }
 
 /* ----------
@@ -528,7 +527,7 @@ button {
 ---------- */
 
 .posted {
-  margin: 0 auto 50px auto;
+  margin: 0 auto 30px auto;
   padding-bottom: 10px;
   display: block;
   text-align: center;
