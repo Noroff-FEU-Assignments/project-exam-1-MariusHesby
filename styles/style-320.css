@@ -1,4 +1,21 @@
 @media screen and (max-width: 991px) {
+  #wrapper {
+    margin: 30px auto 20px auto;
+    background-color: rosybrown;
+  }
+
+  #logo {
+    margin: 0 0 0 20px;
+    text-decoration: none;
+  }
+
+  #logo .border {
+    height: 5px;
+    background-color: var(--yellow);
+    width: 250px;
+    margin-left: 0;
+  }
+
   nav {
     color: var(--blue);
   }
@@ -37,6 +54,11 @@
   }
   nav .openMenu {
     display: block;
+    margin: 5px 10px;
+  }
+
+  nav .openMenu {
+    margin: 0;
   }
 
   nav .mainMenu li a {
