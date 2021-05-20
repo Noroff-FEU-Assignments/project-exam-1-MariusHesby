@@ -263,8 +263,8 @@ nav .openMenu {
   display: flex;
   justify-content: center;
   align-content: center;
-  margin-bottom: 50px;
   overflow: hidden;
+  margin: 0 10px 50px 10px;
 }
 .flex {
   width: 700px;
@@ -283,8 +283,8 @@ nav .openMenu {
   object-position: top;
   width: 100%;
   height: 400px;
-  margin: 0 10px;
   transition: all 0.5s ease-in-out;
+  transform: scale(1);
 }
 .postImgContainer img:hover {
   transform: scale(1.1);
