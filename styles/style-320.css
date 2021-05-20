@@ -55,7 +55,7 @@
   nav .mainMenu {
     height: 100vh;
     position: fixed;
-    padding-top: 80px;
+    padding-top: 50px;
     left: 0;
     right: 0;
     z-index: 10;
@@ -81,9 +81,9 @@
   nav .mainMenu .closeMenu {
     display: block;
     position: absolute;
-    top: 80px;
+    top: 20px;
     right: 20px;
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   nav .openMenu {
     display: block;
@@ -99,9 +99,14 @@
     position: relative;
   }
   nav .mainMenu li a:hover {
-    color: rgb(255, 123, 0);
-    font-size: 1.6rem;
+    background: var(--yellow);
+    font-size: 1.5rem;
   }
+  .active {
+    border: none;
+    background: var(--yellow);
+  }
+
   .icons i {
     display: inline-block;
     padding: 12px;
