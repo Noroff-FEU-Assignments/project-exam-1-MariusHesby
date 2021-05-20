@@ -89,6 +89,10 @@
     padding: 12px;
   }
 
+  .postImg {
+    height: 300px;
+  }
+
   /* CAROUSEL */
 
   .arrow {
