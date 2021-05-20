@@ -113,6 +113,7 @@ a:hover {
 /* LOGO */
 #logo {
   text-decoration: none;
+  margin-left: 20px;
 }
 #logo a:hover {
   text-decoration: none;
@@ -346,7 +347,7 @@ nav .openMenu {
   width: 100%;
 }
 .about-wrapper H2 {
-  text-align: start;
+  justify-content: flex-start;
 }
 
 /* ----------

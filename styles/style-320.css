@@ -14,11 +14,18 @@
     line-height: 1.3em;
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 50px;
   }
   h2 {
     font-size: 1.4em;
     padding-left: 10px;
     padding-right: 10px;
+  }
+  header {
+    margin-bottom: 50px;
+  }
+  .about-wrapper {
+    padding: 50px 15px 30px 15px;
   }
   .blog-wrapper H2 {
     font-size: 1.4em;
