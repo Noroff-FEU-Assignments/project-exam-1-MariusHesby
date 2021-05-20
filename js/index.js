@@ -55,7 +55,7 @@ function result(data) {
                              <div class="latestResult">
                                 <div class="homeTeam"><img src="${homeTeamLogo}" alt="${homeTeamName}" /></div>
                                 <div class="fulltime">
-                                  <p class="date">FT ${startDate}</p>
+                                  <p class="date">${startDate}</p>
                                   <p class="result">${fullTimeScore}</p>
                                 </div>
                                 <div class="awayTeam"><img src="${awayTeamLogo}" alt="${awayTeamName}" /></div>
