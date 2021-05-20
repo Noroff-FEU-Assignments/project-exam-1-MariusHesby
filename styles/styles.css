@@ -133,7 +133,6 @@ nav {
 nav .mainMenu {
   display: flex;
   list-style: none;
-  padding-top: 50px;
 }
 nav .mainMenu li a {
   display: inline-block;
