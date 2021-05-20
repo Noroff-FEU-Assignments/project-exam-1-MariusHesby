@@ -2,4 +2,21 @@
   .blog-wrapper {
     grid-template-columns: 1fr;
   }
+  /* LATEST MATCH RESULTS */
+  #updatedResults {
+    padding: 30px 0 30px 0;
+    margin-bottom: 50px;
+  }
+  .homeTeam img {
+    height: 90px;
+  }
+  .awayTeam img {
+    height: 90px;
+  }
+  /*.fulltime {
+  padding: 0 8%;
+}*/
+  .result {
+    font-size: 2em;
+  }
 }
