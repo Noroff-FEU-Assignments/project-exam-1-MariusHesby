@@ -13,9 +13,9 @@
   .awayTeam img {
     height: 90px;
   }
-  /*.fulltime {
-  padding: 0 8%;
-}*/
+  .fulltime {
+    padding: 0 4%;
+  }
   .result {
     font-size: 2em;
   }

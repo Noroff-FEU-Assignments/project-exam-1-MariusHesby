@@ -1,4 +1,4 @@
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 820px) {
   #wrapper {
     margin: 30px auto 20px auto;
   }
@@ -59,6 +59,7 @@
   nav .openMenu {
     display: block;
     margin: 5px 10px;
+    font-size: 2rem;
   }
 
   nav .openMenu {
