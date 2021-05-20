@@ -108,4 +108,8 @@
   .right {
     right: 10px;
   }
+  /* MODAL */
+  .big-img {
+    width: 100%;
+  }
 }
