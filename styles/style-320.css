@@ -3,15 +3,20 @@
     margin: 30px auto 20px auto;
   }
 
+  #logo span {
+    font-size: 1.5em;
+  }
+
   #logo {
     margin: 0 0 0 20px;
     text-decoration: none;
+    font-size: 1.6em;
   }
 
   #logo .border {
     height: 5px;
     background-color: var(--yellow);
-    width: 250px;
+    width: 205px;
     margin-left: 0;
   }
 
