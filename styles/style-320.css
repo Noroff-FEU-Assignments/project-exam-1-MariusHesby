@@ -1,0 +1,68 @@
+@media screen and (max-width: 991px) {
+  nav {
+    color: var(--blue);
+  }
+  nav .mainMenu {
+    height: 100vh;
+    position: fixed;
+    padding-top: 80px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: #fff;
+    transition: top 0.5s ease;
+    display: none;
+  }
+  nav .mainMenu::before {
+    content: "";
+    background: url("../img/leedsLogo1280px.png") no-repeat top center;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.1;
+  }
+
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    font-size: 3rem;
+  }
+  nav .openMenu {
+    display: block;
+  }
+
+  nav .mainMenu li a {
+    position: relative;
+  }
+  nav .mainMenu li a:hover {
+    color: rgb(255, 123, 0);
+    font-size: 1.6rem;
+  }
+  .icons i {
+    display: inline-block;
+    padding: 12px;
+  }
+
+  /* CAROUSEL */
+
+  .arrow {
+    font-size: 3em;
+    padding: 0 25px 15px 25px;
+    top: 45%;
+    transform: translateY(-45%);
+  }
+  .left {
+    left: 10px;
+  }
+  .right {
+    right: 10px;
+  }
+}

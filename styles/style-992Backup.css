@@ -1,0 +1,45 @@
+@media screen and (max-width: 992px) {
+  #wrapper {
+    background: azure;
+  }
+  nav {
+    color: var(--blue);
+  }
+  nav .mainMenu {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("../img/leedsLogo1280px.png") no-repeat top center;
+    background-color: rgba(152, 66, 211, 0.63);
+    transition: top 0.5s ease;
+    display: none;
+  }
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  nav .openMenu {
+    display: block;
+  }
+  nav .mainMenu li a:hover {
+    background: none;
+    color: rgb(255, 123, 0);
+    font-size: 1.6rem;
+  }
+  .icons i {
+    display: inline-block;
+    padding: 12px;
+  }
+
+  .logo {
+    background: url("../img/leedsLogo1280px.png") no-repeat top center;
+  }
+}
