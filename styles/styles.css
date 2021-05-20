@@ -419,7 +419,7 @@ footer {
   top: 0;
   left: 0;
   background-color: ghostwhite;
-  opacity: 85%;
+  opacity: 0.9;
 }
 .loader {
   position: fixed;
