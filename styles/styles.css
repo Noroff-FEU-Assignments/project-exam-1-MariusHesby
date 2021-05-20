@@ -83,14 +83,14 @@ header {
 }
 h1 {
   text-align: center;
-  margin: 10px auto;
+  margin: 0 auto;
   padding-bottom: 80px;
   border-bottom: 2px solid var(--blue);
 }
 h2 {
   text-transform: uppercase;
   text-align: center;
-  margin: 0 10px 50px 10px;
+  margin-bottom: 50px;
 }
 ul {
   list-style-type: none;
@@ -328,21 +328,25 @@ nav .openMenu {
 ---------- */
 
 .about-wrapper {
-  padding: 80px;
+  padding: 80px 15px;
 }
 .about-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
 }
 .about-content p {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
+
 .about-content img {
-  margin-right: 80px;
+  padding-right: 30px;
+  display: block;
+  object-fit: cover;
+  object-position: left;
+  width: 100%;
 }
 .about-wrapper H2 {
-  text-align: initial;
+  text-align: start;
 }
 
 /* ----------

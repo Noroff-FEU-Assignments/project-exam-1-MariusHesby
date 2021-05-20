@@ -12,9 +12,13 @@
   h1 {
     font-size: 1.5em;
     line-height: 1.3em;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   h2 {
     font-size: 1.4em;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   #logo span {
@@ -111,5 +115,16 @@
   /* MODAL */
   .big-img {
     width: 100%;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+
+  .about-content img {
+    padding-right: 0;
+    height: 350px;
+    width: 100%;
+    margin-bottom: 30px;
   }
 }
