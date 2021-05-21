@@ -276,11 +276,11 @@ nav .openMenu {
 }
 .control ul li {
   width: 20px;
-  height: 20px;
+  height: 25px;
   background: var(--yellow);
   border-top: 3px solid var(--blue);
   border-bottom: 3px solid var(--blue);
-  border-radius: 50px;
+  border-radius: 50%;
   margin: 0 10px;
   cursor: pointer;
 }
