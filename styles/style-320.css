@@ -62,6 +62,7 @@
     flex-direction: column;
     justify-content: start;
     align-items: center;
+    background-color: red;
     transition: top 0.5s ease;
     display: none;
   }
@@ -69,11 +70,12 @@
   nav .mainMenu .closeMenu {
     display: block;
     position: absolute;
+    top: 20px;
+    right: 20px;
     font-size: 2.5rem;
   }
   nav .openMenu {
     display: block;
-    margin: 5px 10px;
     font-size: 2rem;
   }
 
