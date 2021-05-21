@@ -84,13 +84,15 @@
     margin: 0 20px 0 0;
   }
 
+  nav .mainMenu li {
+    margin-bottom: 30px;
+  }
   nav .mainMenu li a:hover {
     background: var(--yellow);
     font-size: 1.5rem;
   }
   .active {
-    border: none;
-    background: var(--yellow);
+    border-bottom: 3px solid var(--yellow);
   }
 
   .icons i {

@@ -40,6 +40,8 @@ body {
 }
 p {
   font-size: 1.1em;
+  margin: 0 auto 50px auto;
+  width: 80%;
 }
 #logo {
   font-family: "Cormorant Garamond", serif;
@@ -124,42 +126,8 @@ a:hover {
   width: 265px;
   margin-left: -10px;
 }
-/* NEW NAV */
 
-/* nav {
-  background: #fff;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-}
-nav .mainMenu {
-  display: flex;
-  list-style: none;
-}
-nav .mainMenu li a {
-  display: inline-block;
-  padding: 15px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #fff;
-  font-size: 1.5rem;
-}
-nav .mainMenu li a:hover {
-  background: rgb(255, 94, 0);
-}
-nav .openMenu {
-  font-size: 2rem;
-  margin: 20px;
-  display: none;
-  cursor: pointer;
-}
-nav .mainMenu .closeMenu,
-.icons i {
-  font-size: 2rem;
-  display: none;
-  cursor: pointer;
-} */
-
+/* NAV */
 nav {
   color: #fff;
   display: flex;
@@ -171,7 +139,7 @@ nav .mainMenu {
 }
 nav .mainMenu li a {
   display: inline-block;
-  padding: 15px;
+  padding: 10px;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1.4rem;
@@ -214,6 +182,10 @@ nav .openMenu {
 }
 .fulltime {
   padding: 0 8%;
+}
+.fulltime p {
+  margin: 0 auto;
+  width: inherit;
 }
 .result {
   letter-spacing: 10px;
@@ -329,7 +301,7 @@ nav .openMenu {
 
 /* PARAGRAPH FIX */
 .content p:nth-of-type(1) {
-  width: 90%;
+  width: 80%;
   margin: 0 auto 50px auto;
 }
 
