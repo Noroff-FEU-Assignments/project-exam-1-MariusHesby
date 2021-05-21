@@ -329,7 +329,7 @@ nav .openMenu {
 
 /* PARAGRAPH FIX */
 .content p:nth-of-type(1) {
-  width: 80%;
+  width: 90%;
   margin: 0 auto 50px auto;
 }
 
@@ -350,7 +350,7 @@ nav .openMenu {
 }
 .big-img {
   position: absolute;
-  width: 70%;
+  width: 80%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0.95);
