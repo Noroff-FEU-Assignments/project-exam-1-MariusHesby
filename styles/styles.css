@@ -36,7 +36,7 @@ body {
   font-weight: 100;
   font-style: normal;
   font-size: 1em;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.3px;
 }
 p {
   font-size: 1.1em;
@@ -300,6 +300,10 @@ nav .openMenu {
 }
 
 /* PARAGRAPH FIX */
+.content p:nth-of-type(1) {
+  width: 80%;
+  margin: 0 auto 50px auto;
+}
 
 /* MODAL */
 .modal {
@@ -417,6 +421,9 @@ footer {
   padding: 40px 0;
   text-align: center;
   border-top: 1px solid var(--blue);
+}
+footer p {
+  margin: 25px auto;
 }
 
 /* ----------
