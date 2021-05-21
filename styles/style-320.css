@@ -62,6 +62,7 @@
     flex-direction: column;
     justify-content: start;
     align-items: center;
+    background: #fff;
     transition: top 0.5s ease;
     display: none;
   }
