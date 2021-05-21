@@ -23,6 +23,9 @@
     padding-left: 10px;
     padding-right: 10px;
   }
+  .contact-info {
+    font-size: 1em;
+  }
   header {
     margin-bottom: 50px;
   }
