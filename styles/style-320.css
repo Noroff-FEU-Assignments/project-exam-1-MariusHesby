@@ -2,12 +2,14 @@
   #wrapper {
     margin: 30px auto 20px auto;
   }
-  /* ----------
-   FONTS & SIZES
----------- */
-
   p {
     font-size: 1em;
+    width: 100%;
+    padding: 0 15px;
+  }
+  .content p:nth-of-type(1) {
+    width: 100%;
+    padding: 0 15px;
   }
   h1 {
     font-size: 1.5em;
