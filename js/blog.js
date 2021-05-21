@@ -2,6 +2,7 @@
 
 let pageNumber = 12;
 const loadMore = document.querySelector("main button");
+const loadMoreHover = document.querySelector("main button:hover");
 const url = "https://headless.superdupersiden.com//wp-json/wp/v2/posts?per_page=" + pageNumber;
 const containerBlog = document.querySelector(".blog-wrapper");
 
@@ -46,6 +47,9 @@ async function getPosts() {
 
         loadMore.disabled = true;
         loadMore.innerText = "No more posts";
+        loadMore.style.background = "var(--lightBlue)";
+        loadMore.style.color = "#999";
+        loadMore.style.cursor = "default";
       }
     }
   } catch (error) {

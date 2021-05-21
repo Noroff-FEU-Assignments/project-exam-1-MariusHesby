@@ -402,6 +402,9 @@ main button {
   font-size: 1em;
   letter-spacing: 1.5px;
 }
+main button a:hover {
+  letter-spacing: 2px;
+}
 
 /* ----------
    FOOTER

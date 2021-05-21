@@ -430,6 +430,14 @@ main button {
   font-style: normal;
   font-size: 1em;
   letter-spacing: 1.5px;
+  background: var(--blue);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+main button:hover {
+  letter-spacing: 3px;
+  transition: all 0.3s ease-in;
 }
 
 /* ----------

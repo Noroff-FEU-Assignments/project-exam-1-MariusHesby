@@ -24,11 +24,11 @@ async function getScore() {
 
     let lastMatch;
     for (let i = 0; i < json.data.length; i++) {
-      const awayTeamId = json.data[i].away_team.team_id;
-      const homeTeamId = json.data[i].home_team.team_id;
+      const awayTeamIdZ = json.data[i].away_team.team_id;
+      const homeTeamIdZ = json.data[i].home_team.team_id;
       const status = json.data[i].status;
 
-      if (awayTeamId === 2546 || homeTeamId === 2546)
+      if (awayTeamIdZ === 2546 || homeTeamIdZ === 2546)
         if (status === "finished") {
           lastMatch = json.data[i];
         }
@@ -40,6 +40,10 @@ async function getScore() {
 }
 
 function result(data) {
+  const awayTeamId = data.away_team.team_id;
+  const homeTeamId = data.home_team.team_id;
+  console.log(awayTeamId);
+  console.log(homeTeamId);
   const awayTeamName = data.away_team.name;
   const awayTeamLogo = data.away_team.logo;
   const homeTeamName = data.home_team.name;
@@ -53,14 +57,96 @@ function result(data) {
 
   resultsContainer.innerHTML += `
                              <div class="latestResult">
-                                <div class="homeTeam"><img src="${homeTeamLogo}" alt="${homeTeamName}" /></div>
+                                <div class="homeTeam"><img src="" alt="${homeTeamName}" id="home" /></div>
                                 <div class="fulltime">
                                   <p class="date">${startDate}</p>
                                   <p class="result">${fullTimeScore}</p>
                                 </div>
-                                <div class="awayTeam"><img src="${awayTeamLogo}" alt="${awayTeamName}" /></div>
+                                <div class="awayTeam"><img src="" alt="${awayTeamName}" id="away" /></div>
                               </div>
                                 `;
+
+  let team;
+  const logoArsenal = "logoArsenal";
+  const logoAstonVilla = "logoAstonVilla";
+  const logoBrighton = "logoBrighton";
+  const logoBurnley = "logoBurnley";
+  const logoChelsea = "logoChelsea";
+  const logoCrystalPalace = "logoCrystalPalace";
+  const logoEverton = "logoEverton";
+  const logoFulham = "logoFulham";
+  const logoLeeds = "logoLeeds";
+  const logoLeicester = "logoLeicester";
+  const logoLiverpool = "logoLiverpool";
+  const logoManchesterCity = "logoManchesterCity";
+  const logoManchesterUnited = "logoManchesterUnited";
+  const logoNewcastle = "logoNewcastle";
+  const logoSheffieldUnited = "logoSheffieldUnited";
+  const logoSouthampton = "logoSouthampton";
+  const logoWestBromwich = "logoWestBromwich";
+  const logoWestham = "logoWestham";
+  const logoWolves = "logoWolves";
+
+  if (awayTeamId === 2522 || homeTeamId === 2522) {
+    team = logoArsenal;
+  }
+  if (awayTeamId === 2520 || homeTeamId === 2520) {
+    team = logoAstonVilla;
+  }
+  if (awayTeamId === 2518 || homeTeamId === 2518) {
+    team = logoBrighton;
+  }
+  if (awayTeamId === 2513 || homeTeamId === 2513) {
+    team = logoBurnley;
+  }
+  if (awayTeamId === 2524 || homeTeamId === 2524) {
+    team = logoChelsea;
+  }
+  if (awayTeamId === 2515 || homeTeamId === 2515) {
+    team = logoCrystalPalace;
+  }
+  if (awayTeamId === 2516 || homeTeamId === 2516) {
+    team = logoEverton;
+  }
+  if (awayTeamId === 12429 || homeTeamId === 12429) {
+    team = logoFulham;
+  }
+  if (awayTeamId === 2546 || homeTeamId === 2546) {
+    team = logoLeeds;
+  }
+  if (awayTeamId === 12424 || homeTeamId === 12424) {
+    team = logoLeicester;
+  }
+  if (awayTeamId === 2509 || homeTeamId === 2509) {
+    team = logoLiverpool;
+  }
+  if (awayTeamId === 12400 || homeTeamId === 12400) {
+    team = logoManchesterCity;
+  }
+  if (awayTeamId === 2523 || homeTeamId === 2523) {
+    team = logoManchesterUnited;
+  }
+  if (awayTeamId === 849 || homeTeamId === 849) {
+    team = logoNewcastle;
+  }
+  if (awayTeamId === 2512 || homeTeamId === 2512) {
+    team = logoSheffieldUnited;
+  }
+  if (awayTeamId === 2959 || homeTeamId === 2959) {
+    team = logoSouthampton;
+  }
+  if (awayTeamId === 2544 || homeTeamId === 2544) {
+    team = logoWestBromwich;
+  }
+  if (awayTeamId === 12401 || homeTeamId === 12401) {
+    team = logoWestham;
+  }
+  if (awayTeamId === 850 || homeTeamId === 850) {
+    team = logoWolves;
+  }
+
+  document.querySelector("#away").src = "img/teams/" + team + ".png";
+  document.querySelector("#home").src = "img/teams/" + team + ".png";
 }
 
 getScore();
