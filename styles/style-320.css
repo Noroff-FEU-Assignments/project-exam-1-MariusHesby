@@ -65,6 +65,7 @@
     background: #fff;
     transition: top 0.5s ease;
     display: none;
+    padding-top: 50px;
   }
 
   nav .mainMenu .closeMenu {

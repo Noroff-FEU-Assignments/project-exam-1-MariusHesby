@@ -84,7 +84,7 @@ header {
 h1 {
   text-align: center;
   margin: 0 auto;
-  padding-bottom: 80px;
+  padding: 0 200px 80px 200px;
   border-bottom: 2px solid var(--blue);
 }
 h2 {
