@@ -23,6 +23,9 @@
     padding-left: 10px;
     padding-right: 10px;
   }
+  main button {
+    margin: 20px auto 0 auto;
+  }
   .contact-info {
     font-size: 1em;
   }
