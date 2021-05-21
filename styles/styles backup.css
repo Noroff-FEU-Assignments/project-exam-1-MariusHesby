@@ -124,10 +124,8 @@ a:hover {
   width: 265px;
   margin-left: -10px;
 }
-/* NEW NAV */
-
-/* nav {
-  background: #fff;
+nav {
+  background: #000;
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -156,33 +154,6 @@ nav .openMenu {
 nav .mainMenu .closeMenu,
 .icons i {
   font-size: 2rem;
-  display: none;
-  cursor: pointer;
-} */
-
-nav {
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-}
-nav .mainMenu {
-  display: flex;
-  list-style: none;
-}
-nav .mainMenu li a {
-  display: inline-block;
-  padding: 15px;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 1.4rem;
-}
-nav .mainMenu li a:hover {
-  background: var(--yellow);
-  border-radius: 5px;
-}
-nav .openMenu {
-  font-size: 3rem;
-  margin: 5px 20px;
   display: none;
   cursor: pointer;
 }
