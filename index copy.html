@@ -8,8 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale-1.0" />
     <link href="data:;base64," rel="icon" />
     <link href="styles/styles.css" rel="stylesheet" />
-    <link href="styles/style-1250.css" rel="stylesheet" />
     <link href="styles/style-992.css" rel="stylesheet" />
+    <link href="styles/style-720.css" rel="stylesheet" />
+    <link href="styles/style-320.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+      integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o="
+      crossorigin="anonymous"
+    />
+    <script src="js/components/hamburger.js" defer></script>
     <script src="js/index.js" defer></script>
   </head>
 
@@ -22,18 +30,20 @@
           <div class="border"></div>
         </a>
         <nav>
-          <ul id="menu">
-            <li><a href="index.html">Home</a></li>
+          <div class="openMenu"><i class="fa fa-bars"></i></div>
+          <ul class="mainMenu">
+            <li><a class="active" href="index.html">Home</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <div class="closeMenu"><i class="fa fa-times"></i></div>
           </ul>
         </nav>
       </header>
 
       <!-- Main -->
       <main>
-        <h1>Just Another Awesome Leeds United FC<br />Supporter Blog from Norway!</h1>
+        <h1>Just Another Awesome Leeds United FC Supporter Blog from Norway!</h1>
 
         <div class="home-wrapper">
           <!-- Latest match / Loader -->

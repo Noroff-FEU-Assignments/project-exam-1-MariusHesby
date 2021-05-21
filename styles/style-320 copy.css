@@ -49,34 +49,49 @@
     margin-left: 0;
   }
 
+  nav {
+    color: var(--blue);
+  }
   nav .mainMenu {
     height: 100vh;
     position: fixed;
     top: 0;
-    right: 0;
     left: 0;
+    right: 0;
     z-index: 10;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    background: #000;
-    transition: top 1s ease;
+    background: red;
+    transition: top 0.5s ease;
     display: none;
   }
+
   nav .mainMenu .closeMenu {
     display: block;
     position: absolute;
-    top: 20px;
+    top: 0;
     right: 20px;
+    font-size: 2.5rem;
   }
   nav .openMenu {
     display: block;
+    font-size: 2rem;
   }
+
+  nav .openMenu {
+    margin: 0 20px 0 0;
+  }
+
   nav .mainMenu li a:hover {
-    background: none;
-    color: rgb(255, 123, 0);
-    font-size: 1.6rem;
+    background: var(--yellow);
+    font-size: 1.5rem;
   }
+  .active {
+    border: none;
+    background: var(--yellow);
+  }
+
   .icons i {
     display: inline-block;
     padding: 12px;
