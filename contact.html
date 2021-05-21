@@ -51,18 +51,10 @@
             <form id="contactForm">
               <div>
                 <label>
-                  Full name
+                  Full name (6 characters or more)
                   <input name="fullName" id="fullName" placeholder="full name" />
                 </label>
-                <div class="formError" id="fullNameError">Please enter your full name</div>
-              </div>
-
-              <div>
-                <label>
-                  Address (minimum 25 characters)
-                  <input name="address" id="address" placeholder="address" />
-                </label>
-                <div class="formError" id="addressError">Address must be at least 25 characters</div>
+                <div class="formError" id="fullNameError">Name must be at least 6 characters</div>
               </div>
 
               <div>
@@ -75,10 +67,16 @@
 
               <div>
                 <label>
-                  Subject (minimum 10 characters)
+                  Subject (minimum 16 characters)
                   <input name="subject" id="subject" placeholder="subject" />
                 </label>
-                <div class="formError" id="subjectError">Subject must be at least 10 characters</div>
+                <div class="formError" id="subjectError">Subject must be at least 16 characters</div>
+              </div>
+              <div>
+                <label for="text-area"> Message (minimum 26 characters) </label>
+                <textarea name="message" id="message" placeholder="message" rows="8"> </textarea>
+
+                <div class="formError" id="messageError">Message must be at least 26 characters</div>
               </div>
 
               <div class="button">
