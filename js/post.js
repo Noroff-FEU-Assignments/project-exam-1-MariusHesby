@@ -16,7 +16,7 @@ async function fetchPost() {
     postDetailsContainer.innerHTML = "";
 
     //Update details page title
-    title.innerHTML = post.title.rendered;
+    title.innerHTML = "Leeds United | " + post.title.rendered;
 
     // Update heading
     var r_text = new Array();
