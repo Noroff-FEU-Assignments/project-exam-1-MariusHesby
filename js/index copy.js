@@ -19,8 +19,9 @@ console.log(leedsUrl);
 async function getScore() {
   try {
     const json = await (await fetch(leedsUrl)).json();
+
     resultsContainer.innerHTML = "";
-    console.log(json.data);
+
     let lastMatch;
     for (let i = 0; i < json.data.length; i++) {
       const awayTeamIdZ = json.data[i].away_team.team_id;
@@ -65,6 +66,7 @@ function result(data) {
                               </div>
                                 `;
 
+  let team;
   const logoArsenal = "logoArsenal";
   const logoAstonVilla = "logoAstonVilla";
   const logoBrighton = "logoBrighton";
@@ -85,129 +87,66 @@ function result(data) {
   const logoWestham = "logoWestham";
   const logoWolves = "logoWolves";
 
-  let aTeam;
-  let hTeam;
-
-  if (awayTeamId === 2522) {
-    aTeam = logoArsenal;
-  } else if (homeTeamId === 2522) {
-    hTeam = logoArsenal;
+  if (awayTeamId === 2522 || homeTeamId === 2522) {
+    team = logoArsenal;
   }
-
-  if (awayTeamId === 2520) {
-    aTeam = logoAstonVilla;
-  } else if (homeTeamId === 2520) {
-    hTeam = logoAstonVilla;
+  if (awayTeamId === 2520 || homeTeamId === 2520) {
+    team = logoAstonVilla;
   }
-
-  if (awayTeamId === 2518) {
-    aTeam = logoBrighton;
-  } else if (homeTeamId === 2518) {
-    hTeam = logoBrighton;
+  if (awayTeamId === 2518 || homeTeamId === 2518) {
+    team = logoBrighton;
   }
-
-  if (awayTeamId === 2513) {
-    aTeam = logoBurnley;
-  } else if (homeTeamId === 2513) {
-    hTeam = logoBurnley;
+  if (awayTeamId === 2513 || homeTeamId === 2513) {
+    team = logoBurnley;
   }
-
-  if (awayTeamId === 2524) {
-    aTeam = logoChelsea;
-  } else if (homeTeamId === 2524) {
-    hTeam = logoChelsea;
+  if (awayTeamId === 2524 || homeTeamId === 2524) {
+    team = logoChelsea;
   }
-
-  if (awayTeamId === 2515) {
-    aTeam = logoCrystalPalace;
-  } else if (homeTeamId === 2515) {
-    hTeam = logoCrystalPalace;
+  if (awayTeamId === 2515 || homeTeamId === 2515) {
+    team = logoCrystalPalace;
   }
-
-  if (awayTeamId === 2516) {
-    aTeam = logoEverton;
-  } else if (homeTeamId === 2516) {
-    hTeam = logoEverton;
+  if (awayTeamId === 2516 || homeTeamId === 2516) {
+    team = logoEverton;
   }
-
-  if (awayTeamId === 12429) {
-    aTeam = logoFulham;
-  } else if (homeTeamId === 12429) {
-    hTeam = logoFulham;
+  if (awayTeamId === 12429 || homeTeamId === 12429) {
+    team = logoFulham;
   }
-
-  if (awayTeamId === 2546) {
-    aTeam = logoLeeds;
-  } else if (homeTeamId === 2546) {
-    hTeam = logoLeeds;
+  if (awayTeamId === 2546 || homeTeamId === 2546) {
+    team = logoLeeds;
   }
-
-  if (awayTeamId === 12424) {
-    aTeam = logoLeicester;
-  } else if (homeTeamId === 12424) {
-    hTeam = logoLeicester;
+  if (awayTeamId === 12424 || homeTeamId === 12424) {
+    team = logoLeicester;
   }
-
-  if (awayTeamId === 2509) {
-    aTeam = logoLiverpool;
-  } else if (homeTeamId === 2509) {
-    hTeam = logoLiverpool;
+  if (awayTeamId === 2509 || homeTeamId === 2509) {
+    team = logoLiverpool;
   }
-
-  if (awayTeamId === 12400) {
-    aTeam = logoManchesterCity;
-  } else if (homeTeamId === 12400) {
-    hTeam = logoManchesterCity;
+  if (awayTeamId === 12400 || homeTeamId === 12400) {
+    team = logoManchesterCity;
   }
-
-  if (awayTeamId === 2523) {
-    aTeam = logoManchesterUnited;
-  } else if (homeTeamId === 2523) {
-    hTeam = logoManchesterUnited;
+  if (awayTeamId === 2523 || homeTeamId === 2523) {
+    team = logoManchesterUnited;
   }
-
-  if (awayTeamId === 849) {
-    aTeam = logoNewcastle;
-  } else if (homeTeamId === 849) {
-    hTeam = logoNewcastle;
+  if (awayTeamId === 849 || homeTeamId === 849) {
+    team = logoNewcastle;
   }
-
-  if (awayTeamId === 2512) {
-    aTeam = logoSheffieldUnited;
-  } else if (homeTeamId === 2512) {
-    hTeam = logoSheffieldUnited;
+  if (awayTeamId === 2512 || homeTeamId === 2512) {
+    team = logoSheffieldUnited;
   }
-
-  if (awayTeamId === 2959) {
-    aTeam = logoSouthampton;
-  } else if (homeTeamId === 2959) {
-    hTeam = logoSouthampton;
+  if (awayTeamId === 2959 || homeTeamId === 2959) {
+    team = logoSouthampton;
   }
-
-  if (awayTeamId === 2544) {
-    aTeam = logoWestBromwich;
-  } else if (homeTeamId === 2544) {
-    hTeam = logoWestBromwich;
+  if (awayTeamId === 2544 || homeTeamId === 2544) {
+    team = logoWestBromwich;
   }
-
-  if (awayTeamId === 12401) {
-    aTeam = logoWestham;
-  } else if (homeTeamId === 12401) {
-    hTeam = logoWestham;
+  if (awayTeamId === 12401 || homeTeamId === 12401) {
+    team = logoWestham;
   }
-
-  if (awayTeamId === 850) {
-    aTeam = logoWolves;
-  } else if (homeTeamId === 850) {
-    hTeam = logoWolves;
-  }
-
   if (awayTeamId === 850 || homeTeamId === 850) {
     team = logoWolves;
   }
 
-  document.querySelector("#home").src = "img/teams/" + hTeam + ".png";
-  document.querySelector("#away").src = "img/teams/" + aTeam + ".png";
+  document.querySelector("#home").src = "img/teams/" + team + ".png";
+  document.querySelector("#away").src = "img/teams/" + team + ".png";
 }
 
 getScore();
