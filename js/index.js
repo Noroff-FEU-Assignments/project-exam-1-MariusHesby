@@ -300,7 +300,6 @@ async function getPosts() {
       } else {
         position = 3;
       }
-      /*position = position < 4 - 1 ? position + 1 : 3; */
       document.querySelector(".control .selected").classList.remove("selected");
       indicatorContainer.children[position].classList.add("selected");
       slider.style.transform = "translateX(" + position * -25 + "%)";
