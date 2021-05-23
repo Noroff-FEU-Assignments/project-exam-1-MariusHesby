@@ -12,6 +12,8 @@ async function getPosts() {
     const post = await response.json();
     console.log("post: ", post);
 
+    containerBlog.innerHTML = "";
+
     for (let i = 0; i < post.length; i++) {
       if (i === 6) {
         break;
