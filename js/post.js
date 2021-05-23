@@ -19,17 +19,17 @@ async function fetchPost() {
     title.innerHTML = "Leeds United | " + post.title.rendered;
 
     // Update heading
-    var r_text = new Array();
-    r_text[0] = "You have chosen a great post!";
-    r_text[1] = "You have chosen the greatest post of all!";
-    r_text[2] = "Excellent choice of post, I salute you!";
-    r_text[3] = "Just another awesome post, enjoy!";
-    r_text[4] = "This is the best post - ever!";
-    r_text[5] = "You have chosen the greatest post ever written!";
-    r_text[6] = "You have chosen one of my favorite posts";
+    var random = new Array();
+    random[0] = "You have chosen a great post!";
+    random[1] = "You have chosen the greatest post of all!";
+    random[2] = "Excellent choice of post, I salute you!";
+    random[3] = "Just another awesome post, enjoy!";
+    random[4] = "This is the best post - ever!";
+    random[5] = "You have chosen the greatest post ever written!";
+    random[6] = "You have chosen one of my favorite posts";
     var i = Math.floor(7 * Math.random());
 
-    heading.innerHTML = r_text[i];
+    heading.innerHTML = random[i];
 
     //Create post content
     const postTitle = post.title.rendered;

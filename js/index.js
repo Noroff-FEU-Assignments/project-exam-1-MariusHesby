@@ -41,12 +41,8 @@ async function getScore() {
 function result(data) {
   const awayTeamId = data.away_team.team_id;
   const homeTeamId = data.home_team.team_id;
-  console.log(awayTeamId);
-  console.log(homeTeamId);
   const awayTeamName = data.away_team.name;
-  const awayTeamLogo = data.away_team.logo;
   const homeTeamName = data.home_team.name;
-  const homeTeamLogo = data.home_team.logo;
   const fullTimeScore = data.stats.ft_score;
   const startDate = new Date(data.match_start).toLocaleString("en-GB", {
     day: "numeric",
@@ -216,16 +212,16 @@ getScore();
 
 const url = "https://headless.superdupersiden.com//wp-json/wp/v2/posts?per_page=4";
 
-const left = document.querySelector(".left");
-const right = document.querySelector(".right");
+const back = document.querySelector(".left");
+const forth = document.querySelector(".right");
 const slider = document.querySelector(".slider");
 const slideOne = document.querySelector(".one");
 const slideTwo = document.querySelector(".two");
 const slideThree = document.querySelector(".three");
 const slideFour = document.querySelector(".four");
-const indicatorParent = document.querySelector(".control ul");
+const indicatorContainer = document.querySelector(".control ul");
 const indicators = document.querySelectorAll(".control li");
-let index = 0;
+let position = 0;
 
 async function getPosts() {
   try {
@@ -277,28 +273,41 @@ async function getPosts() {
                             </div>
                            `;
 
-      indicators.forEach((indicator, e) => {
+      indicators.forEach((indicator, move) => {
         indicator.addEventListener("click", () => {
           document.querySelector(".control .selected").classList.remove("selected");
           indicator.classList.add("selected");
-          slider.style.transform = "translateX(" + e * -25 + "%)";
-          index = e;
+          slider.style.transform = "translateX(" + move * -25 + "%)";
+          position = move;
         });
       });
     }
 
-    left.addEventListener("click", function () {
-      index = index > 0 ? index - 1 : 0;
+    back.addEventListener("click", function () {
+      if (position > 0) {
+        position = position - 1;
+      } else if (position > 1) {
+        position = position - 1;
+      } else {
+        position = 0;
+      }
       document.querySelector(".control .selected").classList.remove("selected");
-      indicatorParent.children[index].classList.add("selected");
-      slider.style.transform = "translateX(" + index * -25 + "%)";
+      indicatorContainer.children[position].classList.add("selected");
+      slider.style.transform = "translateX(" + position * -25 + "%)";
     });
 
-    right.addEventListener("click", function () {
-      index = index < 4 - 1 ? index + 1 : 3;
+    forth.addEventListener("click", function () {
+      if (position < 3) {
+        position = position + 1;
+      } else if (position < 2) {
+        position = position + 1;
+      } else {
+        position = 3;
+      }
+      /*position = position < 4 - 1 ? position + 1 : 3; */
       document.querySelector(".control .selected").classList.remove("selected");
-      indicatorParent.children[index].classList.add("selected");
-      slider.style.transform = "translateX(" + index * -25 + "%)";
+      indicatorContainer.children[position].classList.add("selected");
+      slider.style.transform = "translateX(" + position * -25 + "%)";
     });
   } catch (error) {
     console.log(error);
