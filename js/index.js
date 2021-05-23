@@ -198,10 +198,6 @@ function result(data) {
     hTeam = logoWolves;
   }
 
-  if (awayTeamId === 850 || homeTeamId === 850) {
-    team = logoWolves;
-  }
-
   document.querySelector("#home").src = "img/teams/" + hTeam + ".png";
   document.querySelector("#away").src = "img/teams/" + aTeam + ".png";
 }
