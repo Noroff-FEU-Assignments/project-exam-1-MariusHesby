@@ -25,8 +25,8 @@ async function fetchPost() {
     r_text[2] = "Excellent choice of post, I salute you!";
     r_text[3] = "Just another awesome post, enjoy!";
     r_text[4] = "This is the best post - ever!";
-    r_text[5] = "Knock knock! Who´s there? Just the greatest post ever written!";
-    r_text[6] = "If this post could talk, it would scream!";
+    r_text[5] = "You have chosen the greatest post ever written!";
+    r_text[6] = "You have chosen one of my favorite posts";
     var i = Math.floor(7 * Math.random());
 
     heading.innerHTML = r_text[i];
